@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Banderas</title>
+    
+    <style>
+      h1 {
+        font-family: sans-serif;
+        text-align: center;
+      }
+      main {
+        width: 700px;
+        height: 380px;
+        margin: 5rem auto;
+        position: relative;
+      }
+      .wrapper-bandera {
+        padding: 0px;
+        width: 300px;
+        height: 180px;
+        position: absolute;
+        outline: 1px solid black;      
+    }
+
+    .wrapper-bandera1 {
+      background: red;
+      top: 0px;
+      left: 0px;
+    }
+    #bandera1 {
+      position: relative;
+    }
+    #bandera1 .centro-amarillo {
+      width: 100%;
+      height: 60px;
+      background-color: yellow;
+      position: absolute;
+      top: 60px;
+    }
+    
+
+    .wrapper-bandera2 {
+      background-color: red;
+      top: 190px;
+      left: 0px;
+    }
+    #bandera2 {
+      position: relative;
+    }
+    #bandera2 .linea-blanca-h {
+      background-color: white;
+      height: 20px;
+      width: 100%;
+      position: relative;
+      top: 80px;
+    }
+    #bandera2 .linea-blanca-v {
+      background-color: white;
+      width: 30px;
+      height: 180px;
+      position: absolute;
+      top: 0px;
+      left: 80px;
+    } /* ! qué pasa acá */
+
+
+    .wrapper-bandera3 {
+      top: 0px;
+      left: 310px;
+    }
+    #bandera3 {
+      position: relative;
+    }
+    #bandera3 .franja-roja {
+      background: red;
+      width: 75px;
+      height: 180px;
+      position: relative;
+      top: 0px;
+      left: 0px;
+    }
+    #bandera3 .franja-verde {
+      background: green;
+      height: 55px;
+      width: 300px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    #bandera3 .franja-negra {
+      background: black;
+      height: 55px;
+      width: 300px;
+      position: absolute;
+      top: 125px;
+      left: 0;
+    }
+
+    .wrapper-bandera4 {
+      top: 190px;
+      left: 310px;
+    }
+    #bandera4 {
+      position: relative;
+    }
+    #bandera4 .circulo-rojo {
+      width: 0px;
+      height: 0px;
+      padding: 0px;
+      margin: 0px;
+      border: 25px solid red;
+      border-radius: 50%;
+      position: absolute;
+      top: 65px;
+      left: 125px;
+
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Ejercicio banderas. Posicionamiento.</h1>
+  <main>
+    <div class="wrapper-bandera wrapper-bandera1">
+      <div id="bandera1">
+        <div class="centro-amarillo"></div>
+      </div>
+    </div>
+    <div class="wrapper-bandera wrapper-bandera2">
+      <div id="bandera2">
+        <div class="linea-blanca-h"></div>
+        <div class="linea-blanca-v"></div>
+      </div>
+    </div>
+    <div class="wrapper-bandera wrapper-bandera3">
+      <div id="bandera3">
+        <div class="franja-verde"></div>
+        <div class="franja-negra"></div>
+        <div class="franja-roja"></div>
+      </div>
+    </div>
+    <div class="wrapper-bandera wrapper-bandera4">
+      <div id="bandera4">
+        <div class="circulo-rojo"></div>
+      </div>
+    </div>
+  </main>
+  <aside>
+    <br><br>
+    <figure>
+      <figcaption>Notas</figcaption>
+      <ol>
+        <li><em>Observé que el orden de los elementos en el código afecta a su "índice z". La banda roja en la bandera de Arabia se esconde al estar primero, pero si está último, queda encima de las otras dos que tienen largo completo.</em></li>
+        <li><em>No me queda completamente claro el funcionamiento de </em><code>absolute</code> y <code>relative</code><em> cuando quedan anidados en más de un nivel. En una relación "padre-hijo" es simple, pero en configuraciones más complejas debo estudiarlo más.</em></li>
+        <li><em>La bandera de Dinamarca tiene una curiosa configuración de </em><code>absolute</code> y <code>relative</code><em> en las bandas blancas. Deberé estudiar otro poco para saber por qué así funciona bien.</em></li>
+      </ol>
+    </figure>
+  </aside>
+</body>
+</html>
