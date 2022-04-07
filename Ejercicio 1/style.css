@@ -1,0 +1,52 @@
+/* mini reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* estilo presentacional */
+h1 {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 1rem auto;
+}
+main {
+  width: 70%;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+section {
+  padding: 1rem;
+}
+
+/* Una solución al ejercicio */
+main {
+  font-size: 0;
+}
+section {
+  width: 25%;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+/* SOLUCION 2 */
+/*section {
+  width: 25%;
+  padding: 0.5rem;
+  display: inline-block;
+}*/
+
+/* SOLUCION 3 */
+/*
+section {
+  width: 25%;
+  padding: 0.5rem;
+  float: left;
+}
+article {
+  clear: both;
+}
+*/
+
+
